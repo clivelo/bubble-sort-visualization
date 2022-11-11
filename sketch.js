@@ -1,5 +1,5 @@
 var arr = [];
-var spacing = 5;
+var spacing = 10;
 var index = 0;
 var leftToSort;
 
