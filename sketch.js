@@ -15,12 +15,18 @@ function setup() {
 
 function draw() {
   background(255);
-  noStroke();
+  stroke(255);
   fill(0);
   for (var i = 0; i < arr.length; i++) {
+    if (i == index) {
+      fill(255, 0, 0);
+    }
     rect((i * width) / arr.length, height - arr[i], width / arr.length, arr[i]);
+    fill(0);
   }
 
+  text("Bubble sort\nAverage time complexity: O(n²)", 5, 15)
+  
   swap(index, index + 1);
   index++;
   if (index + 1 >= leftToSort) {
