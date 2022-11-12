@@ -25,7 +25,7 @@ function draw() {
     fill(0);
   }
 
-  text("Bubble sort\nAverage time complexity: O(n²)", 5, 15)
+  text("Bubble sort\nBest time complexity: O(n)\nAverage time complexity: O(n²)\nWorst time complexity: O(n²)", 5, 15)
   
   swap(index, index + 1);
   index++;
